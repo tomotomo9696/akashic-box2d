@@ -7,6 +7,7 @@
     "prepublish": "npm run build && npm run doc",
     "clean": "shx rm -rf lib && shx rm -rf doc",
     "build": "tsc",
+    "prepare": "npm run build",
     "doc": "typedoc --out ./doc --mode file && shx cp -r ./img ./doc",
     "lint": "tslint -c tslint.json src/**/*.ts spec/src/**/*.ts",
     "test": "npm run build && jasmine ./spec/**/*.js && npm run lint"
