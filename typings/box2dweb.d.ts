@@ -3044,12 +3044,12 @@ declare module "box2dweb" {
 			/**
 			* Normal impulses.
 			**/
-			public normalImpulses: Box2D.Common.Math.b2Vec2;
+			public normalImpulses: Array<number>;
 
 			/**
 			* Tangent impulses.
 			**/
-			public tangentImpulses: Box2D.Common.Math.b2Vec2;
+			public tangentImpulses: Array<number>;
 		}
 	}
 
